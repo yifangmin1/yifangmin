@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>8-组件项目</title>
+
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/mystyle.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<style type="text/css">
+	.img60{width: 60px;height: 60px;}
+	.cvs{width:520px;}
+	.number{text-align: center;margin-top: 50px;}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">OA办公系统</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="##"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;管理首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="index02.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;用户管理</a></li>
+        <li><a href="index03.html"><span>&nbsp;内容管理</span></a></li>
+        <li><a href="index04.html"><span>&nbsp;标签管理</span></a></li>
+        <li><a href="index05.html"><span>&nbsp;我的邮箱</span></a></li>
+        
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><div class="mar_10"><img src="images/touxiang.jpg" class="img-circle img-responsive"></div></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户管理 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;用户管理1</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;用户管理1</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;用户管理1</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;用户管理1</a></li>
+            <li><a href="#"> <span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;用户管理1</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="alert alert-info alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4>系统消息</h4>
+                  <p>您有100条未读的消息</p>
+                  <p>
+                      <button type="button" class="btn btn-info">立即处理</button>
+                      <button type="button" class="btn btn-default">稍后处理</button>
+                  </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4>系统消息</h4>
+                  <p>您有100条未读的消息</p>
+                  <p>
+                      <button type="button" class="btn btn-danger">立即处理</button>
+                      <button type="button" class="btn btn-default">稍后处理</button>
+                  </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="alert alert-success alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4>系统消息</h4>
+                  <p>您有100条未读的消息</p>
+                  <p>
+                      <button type="button" class="btn btn-success">立即处理</button>
+                      <button type="button" class="btn btn-default">稍后处理</button>
+                  </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">个人名片</div>
+                 <div class="panel-body">
+                 
+                    <div class="row">
+                        <div class="col-xs-6">
+                           <img src="images/images.jpg" class="img-responsive img-rounded">
+                        </div>
+                        <div class="col-xs-6">
+                            <p>部门: IT部门</p>
+                            <p>职位: 前端开发工程师</p>
+                            <p>专业技能: 网站维护, 移动端开发</p>
+                        </div>
+                        <div class="col-xs-12 pad_10">
+                            <span class="label label-default">Default</span>
+                            <span class="label label-primary">Primary</span>
+                            <span class="label label-success">Success</span>
+                            <span class="label label-info">Info</span>
+                            <span class="label label-warning">Warning</span>
+                        </div>     
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">我的任务</div>
+                        <div class="panel-body">
+                             <ul class="list-group">
+                                  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras justo odio <small class="pull-right">2017-8-8</small></a></li>
+                                  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras justo odio <small class="pull-right">2017-8-8</small></a></li>
+                                  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras justo odio <small class="pull-right">2017-8-8</small></a></li>
+                                  <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras justo odio <small class="pull-right">2017-8-8</small></a></li>
+                                 
+                            </ul>
+                        </div>
+                        <div class="panel-footer">Panel footer</div>
+                     </div>
+                    
+                 </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="images/01.jpg" alt="...">
+              <div class="carousel-caption">
+                说明文字1
+              </div>
+            </div>
+            <div class="item ">
+              <img src="images/02.jpg" alt="...">
+              <div class="carousel-caption">
+                说明文字1
+              </div>
+            </div>
+            <div class="item">
+              <img src="images/03.jpg" alt="...">
+              <div class="carousel-caption">
+                说明文字1
+              </div>
+            </div>
+          </div>
+        
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          
+        </div>
+        </div>
+    </div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">
+				            网站数据统计
+				        </h3>
+				    </div>
+				    <div class="panel-body">
+							<table class="table">
+							  <thead>
+							    <tr>
+							      <th>项目统计</th>
+							      <th>昨日</th>
+							      <th>今日</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th>网站统计</th>
+							      <th>200</th>
+							      <th>400</th>
+							    </tr>
+							    <tr>
+							      <th>网站统计</th>
+							      <th>200</th>
+							      <th>400</th>
+							    </tr>
+							    <tr>
+							      <th>网站统计</th>
+							      <th>200</th>
+							      <th>400</th>
+							    </tr>
+							    <tr>
+							      <th>网站统计</th>
+							      <th>200</th>
+							      <th>400</th>
+							    </tr>
+							  </tbody>
+							</table>				    	
+				    </div>
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">
+				            网站数据统计
+				        </h3>
+				    </div>
+							<table class="table">
+							  <tbody>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-ok"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    
+							    <tr>
+							      <th><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							    <tr>
+							      <th><span class="glyphicon glyphicon-remove"></span>&nbsp;&nbsp;Cras just odio</th>
+							      <th style="text-align: right;">2018-8-8</th>
+							    </tr>
+							  </tbody>
+							</table>				    	
+				</div>
+			</div>
+		</div> 
+    <div class="row">
+    	<div class="col-md-6">
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">今日访客统计</h3>
+				    </div>
+				    <div class="panel-body cvs">
+							<canvas id="canvas" class="canvas-height" ></canvas>	
+    				</div>
+				</div>
+			</div>    		
+    		
+    	<div class="col-md-6">
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">今日访客统计</h3>
+				    </div>
+				    <div class="panel-body">
+							<p>设计稿 ：40%</p>
+							<div class="progress progress-striped">
+							    <div class="progress-bar progress-bar-success" role="progressbar"
+							         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							         style="width:40%;">
+							        <span class="sr-only">40% 完成（成功）</span>
+							    </div>
+							</div>
+							<p>设计稿 ：25%</p>
+							<div class="progress progress-striped">
+							    <div class="progress-bar progress-bar-info" role="progressbar"
+							         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							         style="width:25%;">
+							        <span class="sr-only">25% 完成（信息）</span>
+							    </div>
+							</div>
+							<p>设计稿 ：40%</p>
+							<div class="progress progress-striped">
+							    <div class="progress-bar progress-bar-warning" role="progressbar"
+							         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							         style="width: 40%;">
+							        <span class="sr-only">40% 完成（警告）</span>
+							    </div>
+							</div>
+							<p>设计稿 ：40%</p>
+							<div class="progress progress-striped">
+							    <div class="progress-bar progress-bar-danger" role="progressbar"
+							         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							         style="width: 40%;">
+							        <span class="sr-only">40% 完成（危险）</span>
+							    </div>
+							</div>				    	
+    				</div>
+				</div>
+    		
+    		
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-md-12">
+				<div class="panel panel-default">
+				    <div class="panel-heading">
+				        <h3 class="panel-title">今日访客统计</h3>
+				    </div>
+				    <div class="panel-body">
+				    	<div class="col-md-7">
+								<div class="media well">
+								    <a class="pull-left" href="#">
+								        <img class="media-object img60" src="images/a.png" 
+								             alt="媒体对象">
+								    </a>
+								    <div class="media-body">
+								        <h4 class="media-heading">小星星</h4>
+								        技术大哥，我的电脑不见了，帮我找找。
+								    </div>
+								</div>
+								<div class="media well">
+								    <a class="pull-right" href="#">
+								        <img class="media-object img60" src="images/b.png" 
+								             alt="媒体对象">
+								    </a>
+								    <div class="media-body text-right">
+								        <h4 class="media-heading">小星星</h4>
+								        技术大哥，我的电脑不见了，帮我找找。
+								    </div>
+								</div>
+								<div class="media well">
+								    <a class="pull-left" href="#">
+								        <img class="media-object img60" src="images/a.png" 
+								             alt="媒体对象">
+								    </a>
+								    <div class="media-body">
+								        <h4 class="media-heading">小星星</h4>
+								        技术大哥，我的电脑不见了，帮我找找。
+								    </div>
+								</div>
+								<div class="media well">
+								    <a class="pull-right" href="#">
+								        <img class="media-object img60" src="images/b.png" 
+								             alt="媒体对象">
+								    </a>
+								    <div class="media-body text-right">
+								        <h4 class="media-heading">小星星</h4>
+								        	技术大哥，我的电脑不见了，帮我找找。
+								    </div>
+								</div>
+				    	</div>
+				    	<div class="col-md-5">
+							    <label for="name">输入留言内容</label>
+							    <textarea class="form-control" rows="6" placeholder="请输入留言内容"></textarea>
+	      					<button type="submit" class="btn btn-success" style="margin: 10px 0;">留言</button>
+							<div class="panel panel-default">
+							    <div class="panel-heading">
+							        <h3 class="panel-title">
+							            团队留言手册
+							        </h3>
+							    </div>
+							    <div class="panel-body">
+									<div class="panel panel-default">
+									  <!-- List group -->
+									  <ul class="list-group">
+									    <li class="list-group-item">站长：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;232131</li>
+									    <li class="list-group-item">技术：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;232131</li>
+									    <li class="list-group-item">推广：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;153223</li>
+									    <li class="list-group-item">客服：<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;1232131<span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;232323-111</li>
+									  </ul>
+									</div>
+							    </div>
+							</div>								  
+				    	</div>
+    				</div>
+				</div>
+    	</div>
+    </div>
+</div>
+<footer class="number">
+	<p>联系方式：12254844489</p>
+</footer>
+</body>
+</html>
+<script>
+
+$('.carousel').carousel({
+   interval: 1000
+})
+
+</script>

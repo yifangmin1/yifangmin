@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{background:#000000;}
+			.zp{width:980px;height: 500px;}
+			.inner{position: absolute;left: 0;top: 0;right: 0;bottom: 0;margin: auto;}
+			.item{width:196px;height:100px;position: absolute;background: #FFF;transition:transform 2s;}
+			.pic{width:100%;height:100%;transition:transform 2s;}
+		</style>
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				var zp=$('.zp')
+				showa();
+				showb();
+				
+				function showa(){
+					for(var i=0;i<25;i++){
+						var x=i%5;
+						var y=parseInt(i/5);
+						$("<div class='item'><div class='pic'></div></div>").css({
+							"left":x*196+"px",
+							"top":y*100+"px" 
+						})
+						.appendTo(zp)
+					}
+				}
+				function showb(){
+					$('.item').each(function(index, element){
+						var x=index%5;
+						var y=parseInt(index/5);
+						var deg=Math.random()*200-80;
+						$(this).css({
+							"transform":"translate("+(x-2)*100+"px,"+(y-2)*100+"px) rotate("+deg+"deg)"}
+						);
+						$(this).find('.pic').css({
+							"background-image":"url(images/"+index+".jpg)",
+							"background-size":"cover",
+							"transform":"scale(0.95,0.9)"
+						});
+					});
+				};
+				
+				function showc(index){
+					$('.item').each(function(i, element){
+						var x=i%5;
+						var y=parseInt(i/5);
+						
+						$(this).css({
+							"transform":"translate(0,0) rotate(0deg)"
+						});
+						$(this).find('.pic').css({
+							"background":"url(images/"+index+".jpg)",
+							"background-size":"auto",
+							"background-position":x*(-196)+"px "+y*(-100)+"px",
+							"transform":"scale(1)"
+						});
+					});
+				}
+				
+				
+				var isshowb=true;
+				$('.item').click(function(){
+					var index=$(this).index();
+//					isshowb? showb(a):showc();
+					
+					if(isshowb){
+						showc(index);
+					}else{
+						showb();
+					}
+					isshowb=!isshowb;
+					
+				})
+					
+					
+					
+				
+				
+				
+				
+				
+			});	
+		</script>
+	</head>
+	<body>
+		<div class="zp inner "></div>
+	</body>
+</html>

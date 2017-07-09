@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{width: 400px;height:300px;border: 3px solid #D58512;font-size:10px;line-height: 20px;padding:10px;overflow: auto;position: relative;}
+			.btn{float: left;border: none;background: #23527C;border-radius: 10px;text-align: center;padding:0 20px;font-size: 25px;height: 40px;line-height: 40px;position: absolute;top:400px;cursor: pointer;}
+			.btn1{margin-left:50px;}
+			.btn2{margin-left:200px;}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var num=document.getElementsByClassName('num')[0];
+				var box=document.getElementsByClassName('box')[0];
+				var btn1=document.getElementsByClassName('btn1')[0];
+				var btn2=document.getElementsByClassName('btn2')[0];
+				var top=document.getElementsByClassName('top')[0];
+				var timer;
+				btn1.onclick=function(){
+					box.onscroll=function(){
+						var bumber=box.scrollTop;
+						top.innerHTML=bumber;
+					};
+					clearInterval(timer);
+					timer=setInterval(run,200)
+					function run(){
+							var con=box.scrollTop;
+							var num=con+4;
+							box.scrollTop=num;
+					}
+				};
+				btn2.onclick=function(){
+					
+					clearInterval(timer);
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<div class="top">0</div>
+		<button type="button" class="btn btn1">开始阅读</button>
+		<button type="button" class="btn btn2">停止阅读</button>
+		<div class="box">
+			西奇公司全称“马达西奇航空股份有限公司”，是苏联时期重要的航空发动机生产公司。这家成立于1907年的公司是航空公司中的祖师爷级别，那时候莱特兄弟首飞还没几年，西奇公司是沙俄第一批投身于航空工业制造的公司。公司于乌克兰扎波罗热市，是世界知名的发动机生产商，主要为固定翼飞机和直升机提供动力系统。早在苏联时期，它的产品就随着苏联的战机出口到90多个国家，有“苏联航空工业的心脏”之称。<br />
+	
+		　　西奇公司现在主要产品是航空涡扇发动机、巡航导弹使用的小型涡喷发动机、直升机使用的涡轮轴发动机。其中直升机涡轴发动机是西奇公司的拳头产品。在苏联时期以及苏联解体后，西奇公司包揽了苏联/俄罗斯米-26、米-28N、米-35、卡-32A11BS、卡-31、米-8（米-17）等一系列直升机的涡轮轴发动机生产。<br />
+		
+		　　2004年，该公司开始研制生产D-18T发动机，主要安装到安-124军用运输机及其货运型安-124-100飞机上。但安-124飞机的订货量很少，因此马达西奇公司总经理巴古斯拉夫表示，为生存考虑，马达西奇公司考虑把D-18T发动机设计专利卖给中国。后来是乌克兰政府阻止了西奇公司的交易，但后来中国和西奇公司有没有做私下交易就不知道了。要知道运-20的完全体发动机最近好像是装机试用了，作为大推力运输机用涡扇，这个研制进度也太快了……<br />
+		
+		　　从1992年到2013年，乌克兰和俄罗斯的关系基本正常，而俄罗斯尽管军费缩减厉害，但由于两次车臣战争的经验教训、以及直升机比较便宜又能在年终总结中写“又订购了一架灰机”，因此俄罗斯时期直升机尤其是武装直升机的订货还是不少的，况且中国大量向俄罗斯订购卡-28以及米-17，这也会给西奇公司发动机的订货单。因此西奇公司这20年活得比较滋润。<br />
+		
+			2014俄乌交恶后，西奇公司失去了俄罗斯这一主要客户，公司只能勉强维持运转，乌克兰军事工业体系受到了极大损坏。这时候乌克兰向欧洲求助，意思就是能不能让欧洲和美国向西奇公司下些订单，让西奇公司维持生存？<br />
+
+		　　没门。<br />
+		
+		　　现在经济萧条，军事装备订货量也不多，哪家都没余粮啊。无论欧洲还是美国，军工订单先得喂自己的生产厂商。再说，西奇公司的发动机都是俄标，和欧美的制式本来就完全不同，如果订购西奇公司的发动机装在飞机上，那就要做不少修改工作。<br />
+		
+		　　西奇公司死撑到2017年。4月份，乌克兰政府官员奥列格·利亚申科在参观西奇公司后表示，西奇公司已濒临破产，急需低利率借款、税收优惠等国家扶持。<br />
+		
+			除了直升机发动机，西奇公司还向俄罗斯交付用于组装VK-2500型、TV3-117发动机及其改型和D-136发动机的零部件。此外，还供应用于维修安-72、安-74、安-124和生产新的安-140、安-148、雅客-130飞机的发动机。可以说西奇公司本来就是苏联时代遗留的产物，它几乎所有的业务都和俄罗斯脱不开关系。公司40%的销售额都定位在俄罗斯。实际上那时公司依靠俄罗斯飞机和直升机制造市场来维持运行的份额已达到其全部生产量的85%。俄罗斯和乌克兰闹掰了，这厂本来就该玩完了。<br />
+		　　而且，下令对俄罗斯进行装备禁运的，是欧洲。2014年夏天，西奇公司毫无准备地收到了乌克兰政府代为转告的欧洲准备禁止向俄罗斯供应军用和多用产品这一“惊喜”。其实在这之前，西奇公司还不打算停止和俄罗斯的生意尽管此时俄罗斯已经吞并了克里米亚。<br />
+		
+		　　其实这个禁运对俄罗斯来说也非常难受，不但西奇公司的禁运对俄罗斯直升机的生产造成了麻烦，舰用燃气轮机的禁运也是如此，而且舰用燃气轮机俄罗斯自行生产的产品线是不完整的，缺大功率舰用燃气轮机这一项，所以俄罗斯现在正急急忙忙组织国内厂家进行大功率舰用燃气轮机的自行生产。而直升机涡轮轴发动机的境遇与之相似，但好在并非完全重起炉灶。<br />
+		</div>
+	</body>
+</html>

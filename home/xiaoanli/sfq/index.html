@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>作业2</title>
+
+<style>
+
+ul{ list-style:none;}
+.box{ width:980px; height:500px; overflow:hidden }
+.center{ position:absolute; left:0; top:0; right:0; bottom:0; margin:auto;}
+.slide{ position:absolute;left:0; top:0; width:100%; height:100%; }
+.item{ position:absolute;top:0; }
+.nav{ position:absolute; left :50px; bottom:30px; width:200px; height:30px; z-index:100;}
+
+.nav li{ float:left;border:1px green solid; width:25px; height:25px; margin-right:15px; border-radius:50%; text-align:center; line-height:25px; cursor:pointer; background-color:green; }
+
+.nav li.ac{ background-color:#fff;}
+
+</style>
+
+<script src="js/jquery-3.1.0.min.js"></script>
+
+<script>
+
+$(function(){
+	
+	 // 思路分析
+	
+	 // 1 隐藏: item　width=0;
+	 // 2 显示:  .slide left=0;
+	 
+	 // 3 复位: slide hide(),left=-w; cur show(),z-index=1; last left=0,z-index=2;
+	
+	 
+	 var w=$(".box").width()/4;
+	 var h=$(".box").height();
+	 var box=$(".box");
+	 
+	 init();
+	 
+	 set(0,0);
+	 
+	 var last=0;
+	 var cur=0;
+	
+	
+	// 初始化设置  
+	function set(last,cur){
+		
+	     $(".slide").css("left",-w+"px").hide();  // 所有slide 隐藏 left=-w;
+		 
+		 $(".slide").eq(last).show().css({"z-index":2,"left":0});  // 正在显示的 left=0; z-index=2;
+		 
+		 $(".slide").eq(cur).show().css("z-index",1); // 即将显示的 z-index=1;
+		 
+		 $(".slide").find(".item").width(w); // item恢复默认宽;
+		 
+	}
+	 
+ 
+	 // 四张图片初始化
+	 function init(){
+		 
+		  for(var j=0;j<4;j++){
+			  
+			  var slide=$("<div class='slide'></div>");
+			  
+			  for(var i=0;i<4;i++){
+				  
+				  $("<div class='item'></div>")
+				  .width(w)
+				  .height(h)
+				  .css({
+					  right:(3-i)*w,
+					  "background-image":"url(img/"+j+".jpg)",
+					  "background-position":-w*i+"px 0px"  
+				  })
+				  .appendTo(slide);
+				  
+		      }
+			  
+			  slide.appendTo(box);
+			  
+		  }
+		  
+		  
+	 }
+	
+	
+     $(".nav li").click(function(){
+	     
+		 $(".nav li").removeClass();
+		 $(this).addClass("ac");
+		 
+		 cur=$(this).index();
+
+
+		 if(last==cur) return false;
+		 
+		 
+		 // 动画前的复位;
+		 
+		 set(last,cur);
+		 
+         
+		 // 隐藏last,显示cur
+		 $(".slide").eq(last).find(".item").animate({"width":0},800);
+		 $(".slide").eq(cur).animate({"left":0},800)
+		
+		 last=cur;
+		 
+	 })
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box center">
+   
+   <ul class="nav">
+        <li class="ac">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+   </ul> 
+
+</div>
+
+</body>
+</html>
+
+
