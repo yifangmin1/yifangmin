@@ -1,0 +1,64 @@
+*{padding: 0;margin: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none;}
+.navbar{background: transparent;border: none;}
+.nav > li{text-align: center;}
+#nav-right li a{font-weight: bold;font-size: 15px;}
+#nav-right li a:hover{background-color: orange;color:#fff;transition: all; 1s}
+
+.box1{width:100%;height:100vh;background:url(../images/header-banner.jpg) no-repeat;background-size:100% 100%;background-attachment: fixed;}
+.box1-a{text-align: center;}
+.box1-a img{width: 100px;height: 100px;display: inline-block;transition:background-color,2s ease-in-out width,2s height,2s transform,2s;margin-top:250px;}
+.box1-a img:hover{transform:scale(1.5,1.5);}
+.box1-a h3{color: #fff;font-size:60px ;font-weight: bold;line-height:100px;}
+.box1-a p{color: #fff;font-size:25px ;margin-bottom:180px;}
+
+.box2{width:100%;background: #524664;/*height: 100vh;*/padding-bottom:100px;}
+.box2 .box2-a{text-align: center;}
+.box2-a1{margin-bottom:50px;}
+.box2 .box2-a img{width:100px;height: 100px;display: inline-block;transition:background-color,2s ease-in-out width,2s height,2s transform,2s;margin-top:150px;}
+.box2 .box2-a img:hover{transform:scale(1.5,1.5);}
+.box2 .box2-a h4{font-size:35px;color: #fff;font-weight: bold;line-height: 40px;border-bottom: 2px solid #736588;padding-bottom: 10px;display: inline-block;margin-top: 20px;}
+.box2-a2 .box2-pic{text-align: center;}
+.box2-a2 .box2-pic img{width: 150px;height:150px;display: inline-block;transition:background-color,2s ease-in-out width,2s height,2s transform,2s;margin:20px 0;}
+.box2-text{text-align: left;}
+.box2-a2 .box2-pic img:hover{transform:scale(1.5,1.5);}
+.box2-a2 p{font-size:20px;color: #fff;line-height:35px;font-weight: bold;}
+
+.box3{width: 100%;/*height: 100vh;*/background: #ffd670;padding-bottom: 100px;}
+.box3-b{text-align: center;margin-bottom: 50px;}
+.box3 h4{font-size:35px;color: #fff;font-weight: bold;line-height: 40px;border-bottom: 2px solid #f8e3ae;padding-bottom: 10px;display: inline-block;/*margin-top: 20px;*/text-align: center;margin:150px 0 15px 0;}
+.box3 .box3-b p{font-size: 25px;line-height: 40px;color: #fff;}
+.box3 .progress{height:35px;background:#f8e3ae;}
+.box3 .box-aa{line-height:35px;font-size: 16px;font-weight: bold;text-align: left;padding: 0 15px;}
+.box3 .box-aa .box3-aa1{float: left;}
+.box3 .box-aa .box3-aa2{float: right;}
+.box3-c{margin-top:50px;}
+.box3-c p{font-size: 18px;color: #fff;line-height: 30px;}
+
+.box4{width: 100%;padding-bottom: 100px;}
+.box4 .box4-a{text-align: center;margin-bottom: 50px;}
+.box4 h4{font-size:35px;/*color: #fff;*/font-weight: bold;line-height: 40px;border-bottom: 2px solid #666;padding-bottom: 10px;display: inline-block;/*margin-top: 20px;*/text-align: center;margin:150px 0 15px 0;}
+.box4 .box4-a p{font-size: 25px;line-height: 40px;}
+
+.box4 .box4-b1{margin-bottom: 20px;}
+.box4 .box4-b img{width: 100%;height:100%;transition:background-color,2s ease-in-out width,2s height,2s transform,2s;}
+.box4 .box4-b img:hover{transform:scale(1.2,1.2);}
+
+.box5{width:100%;padding-bottom: 100px;background: #524664;}
+.box5 .box5-a{text-align: center;margin-bottom: 50px;}
+.box5 .box5-a h4{font-size:35px;color: #fff;font-weight: bold;line-height: 40px;border-bottom: 2px solid #666;padding-bottom: 10px;display: inline-block;/*margin-top: 20px;*/text-align: center;margin:150px 0 15px 0;}
+.box5 .box5-a p{font-size: 25px;line-height: 40px;color: #fff;}
+.box5 .box5-b p{font-size:15px;line-height: 40px;color: #fff;}
+.box5 .col-xs-4{padding: 0;}
+.box5 .box5-b{text-align: center;}
+/*.box5 .box5-b .box5-b1{text-align: left;}*/
+.box5 .box5-b span{width:60px;height: 60px;display: inline-block;}
+.box5 .box5-b .box5-pic1{background: url(../images/sprite_img.png) no-repeat;background-position:-2px -155px;}
+.box5 .box5-b .box5-pic1:hover{background-position:-2px -90px;transition: all 1s;}
+.box5 .box5-b .box5-pic2{background: url(../images/sprite_img.png) no-repeat;background-position:-60px -155px;}
+.box5 .box5-b .box5-pic2:hover{background-position:-60px -90px;transition: all 1s;}
+.box5 .box5-b .box5-pic3{background: url(../images/sprite_img.png) no-repeat;background-position:-120px -155px;}
+.box5 .box5-b .box5-pic3:hover{background-position:-120px -90px;transition: all 1s;}
+.xjt a{position: fixed;top: 90%;right:2%;}
+.xjt a span{font-size:2.5em;color:#041366;}
